@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyKhoHang
 {
-    public partial class Form1 : Form
+    public partial class FormDăngnhap : Form
     {
-        public Form1()
+        public FormDăngnhap()
         {
             InitializeComponent();
-        }
-
-        private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormDăngnhap frm = new FormDăngnhap();
-            frm.Show();
         }
     }
 }
