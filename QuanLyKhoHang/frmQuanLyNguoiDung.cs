@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace QuanLyKhoHang
 {
-    public partial class Form1 : Form
+    public partial class frmQuanLyNguoiDung : Form
     {
-        public Form1()
+        public frmQuanLyNguoiDung()
         {
             InitializeComponent();
         }
 
-        private void sưaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
