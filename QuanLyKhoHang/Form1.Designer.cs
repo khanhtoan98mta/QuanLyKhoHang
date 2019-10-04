@@ -57,22 +57,22 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(140, 354);
+            this.panel1.Size = new System.Drawing.Size(140, 381);
             this.panel1.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(147, 92);
+            this.panel3.Location = new System.Drawing.Point(147, 99);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(613, 354);
+            this.panel3.Size = new System.Drawing.Size(613, 381);
             this.panel3.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(11, 92);
+            this.button1.Location = new System.Drawing.Point(11, 99);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 23);
+            this.button1.Size = new System.Drawing.Size(120, 25);
             this.button1.TabIndex = 0;
             this.button1.Text = "Hệ thống";
             this.button1.UseVisualStyleBackColor = true;
@@ -81,27 +81,27 @@
             // 
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(12, 139);
+            this.button2.Location = new System.Drawing.Point(12, 150);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 23);
+            this.button2.Size = new System.Drawing.Size(120, 25);
             this.button2.TabIndex = 1;
             this.button2.Text = "Cập nhật";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(11, 182);
+            this.button3.Location = new System.Drawing.Point(11, 196);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 23);
+            this.button3.Size = new System.Drawing.Size(120, 25);
             this.button3.TabIndex = 2;
             this.button3.Text = "Phiếu nhập";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(11, 225);
+            this.button4.Location = new System.Drawing.Point(11, 242);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 23);
+            this.button4.Size = new System.Drawing.Size(120, 25);
             this.button4.TabIndex = 3;
             this.button4.Text = "Phiếu xuất";
             this.button4.UseVisualStyleBackColor = true;
@@ -112,17 +112,19 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(138, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(622, 86);
+            this.panel2.Size = new System.Drawing.Size(622, 93);
             this.panel2.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Lime;
+            this.label1.BackColor = System.Drawing.Color.DeepPink;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(196, 23);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label1.Location = new System.Drawing.Point(196, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 36);
+            this.label1.Size = new System.Drawing.Size(255, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản lý kho hàng";
             // 
@@ -131,35 +133,37 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(601, 285);
+            this.dataGridView1.Size = new System.Drawing.Size(601, 307);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(11, 310);
+            this.button5.Location = new System.Drawing.Point(11, 334);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 23);
+            this.button5.Size = new System.Drawing.Size(119, 25);
             this.button5.TabIndex = 4;
             this.button5.Text = "Hướng dẫn";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(12, 269);
+            this.button6.Location = new System.Drawing.Point(12, 290);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(118, 23);
+            this.button6.Size = new System.Drawing.Size(118, 25);
             this.button6.TabIndex = 5;
             this.button6.Text = "Quản lý người dùng";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 366);
+            this.ClientSize = new System.Drawing.Size(763, 394);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";

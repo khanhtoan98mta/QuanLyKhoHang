@@ -26,5 +26,10 @@ namespace QuanLyKhoHang
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
