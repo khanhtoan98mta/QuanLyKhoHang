@@ -58,6 +58,42 @@
     <Compile Include="FormDăngnhap.Designer.cs">
       <DependentUpon>FormDăngnhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCapNhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCapNhat.Designer.cs">
+      <DependentUpon>FrmCapNhat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHethong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHethong.Designer.cs">
+      <DependentUpon>frmHethong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHuongdanSudung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHuongdanSudung.Designer.cs">
+      <DependentUpon>frmHuongdanSudung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuNhap.Designer.cs">
+      <DependentUpon>frmPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuXuat.Designer.cs">
+      <DependentUpon>frmPhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLyNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyNguoiDung.Designer.cs">
+      <DependentUpon>frmQuanLyNguoiDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDăngnhap.resx">
       <DependentUpon>FormDăngnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyNguoiDung.resx">
+      <DependentUpon>frmQuanLyNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +130,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\07122018-ton-kho-la-gi-quan-tri-ton-kho-la-gi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-plus-icon-png-image_1585653.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -69,5 +69,15 @@ namespace QuanLyKhoHang.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_plus_icon_png_image_1585653 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-plus-icon-png-image_1585653", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

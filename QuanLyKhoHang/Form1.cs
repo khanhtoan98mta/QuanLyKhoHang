@@ -17,10 +17,19 @@ namespace QuanLyKhoHang
             InitializeComponent();
         }
 
-        private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
+        private void sưaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormDăngnhap frm = new FormDăngnhap();
-            frm.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

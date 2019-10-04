@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyKhoHang
 {
-    public partial class FormDăngnhap : Form
+    public partial class frmHethong : Form
     {
-        public FormDăngnhap()
+        public frmHethong()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form1 frm = new Form1();
-            frm.Show();
         }
     }
 }
