@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,22 +60,41 @@
             this.panel1.Size = new System.Drawing.Size(140, 381);
             this.panel1.TabIndex = 0;
             // 
-            // panel3
+            // button6
             // 
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Location = new System.Drawing.Point(147, 99);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(613, 381);
-            this.panel3.TabIndex = 2;
+            this.button6.Location = new System.Drawing.Point(12, 290);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(118, 25);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Quản lý người dùng";
+            this.button6.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // button5
             // 
-            this.button1.Location = new System.Drawing.Point(11, 99);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 25);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Hệ thống";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button5.Location = new System.Drawing.Point(11, 334);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(119, 25);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Hướng dẫn";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(11, 242);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(120, 25);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Phiếu xuất";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(11, 196);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(120, 25);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Phiếu nhập";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -88,23 +107,32 @@
             this.button2.Text = "Cập nhật";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // button1
             // 
-            this.button3.Location = new System.Drawing.Point(11, 196);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 25);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Phiếu nhập";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(11, 99);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 25);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Hệ thống";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button4
+            // panel3
             // 
-            this.button4.Location = new System.Drawing.Point(11, 242);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 25);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Phiếu xuất";
-            this.button4.UseVisualStyleBackColor = true;
+            this.panel3.Controls.Add(this.dataGridView1);
+            this.panel3.Location = new System.Drawing.Point(147, 99);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(613, 381);
+            this.panel3.TabIndex = 2;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(601, 307);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel2
             // 
@@ -128,38 +156,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản lý kho hàng";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(601, 307);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(11, 334);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 25);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Hướng dẫn";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(12, 290);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(118, 25);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Quản lý người dùng";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 394);
+            this.ClientSize = new System.Drawing.Size(1227, 557);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -170,9 +171,9 @@
             this.Text = "Quản lý kho hàng";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

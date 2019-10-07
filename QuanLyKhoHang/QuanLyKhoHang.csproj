@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\QLthuvien\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,63 +50,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormDăngnhap.cs">
+    <Compile Include="GUI\FormDangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDăngnhap.Designer.cs">
-      <DependentUpon>FormDăngnhap.cs</DependentUpon>
+    <Compile Include="GUI\FormDangnhap.Designer.cs">
+      <DependentUpon>FormDangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCapNhat.cs">
+    <Compile Include="GUI\FrmCapNhat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCapNhat.Designer.cs">
+    <Compile Include="GUI\FrmCapNhat.Designer.cs">
       <DependentUpon>FrmCapNhat.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHethong.cs">
+    <Compile Include="GUI\frmHethong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHethong.Designer.cs">
+    <Compile Include="GUI\frmHethong.Designer.cs">
       <DependentUpon>frmHethong.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHuongdanSudung.cs">
+    <Compile Include="GUI\frmHuongdanSudung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHuongdanSudung.Designer.cs">
+    <Compile Include="GUI\frmHuongdanSudung.Designer.cs">
       <DependentUpon>frmHuongdanSudung.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPhieuNhap.cs">
+    <Compile Include="GUI\frmPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPhieuNhap.Designer.cs">
+    <Compile Include="GUI\frmPhieuNhap.Designer.cs">
       <DependentUpon>frmPhieuNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPhieuXuat.cs">
+    <Compile Include="GUI\frmPhieuXuat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPhieuXuat.Designer.cs">
+    <Compile Include="GUI\frmPhieuXuat.Designer.cs">
       <DependentUpon>frmPhieuXuat.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuanLyNguoiDung.cs">
+    <Compile Include="GUI\frmQuanLyNguoiDung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQuanLyNguoiDung.Designer.cs">
+    <Compile Include="GUI\frmQuanLyNguoiDung.Designer.cs">
       <DependentUpon>frmQuanLyNguoiDung.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormDăngnhap.resx">
-      <DependentUpon>FormDăngnhap.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\FormDangnhap.bin.resx">
+      <DependentUpon>FormDangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLyNguoiDung.resx">
+    <EmbeddedResource Include="GUI\FormDangnhap.ko-KP.resx">
+      <DependentUpon>FormDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormDangnhap.resx">
+      <DependentUpon>FormDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQuanLyNguoiDung.resx">
       <DependentUpon>frmQuanLyNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -133,6 +143,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pngtree-plus-icon-png-image_1585653.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article_1544416931_532.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ba_buoc_de_quan_ly_toi_uu_kho_nha_hang_hieu_qua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phan-mem-quan-ly-ban-hang-anh-bia-845x300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
