@@ -161,6 +161,9 @@
     <EmbeddedResource Include="GUI\QLKhohang.resx">
       <DependentUpon>QLKhohang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User_Control\Huongdan.resx">
+      <DependentUpon>Huongdan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\User_Control\Khachhang.resx">
       <DependentUpon>Khachhang.cs</DependentUpon>
     </EmbeddedResource>
