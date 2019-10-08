@@ -13,18 +13,18 @@ namespace QuanLyKhoHang
         {
             if (value == 0)
             {
-                return @"Data Source=localhost;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                return @"Data Source=localhost;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
             }
             else
             {
-                return @"Data Source=" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                return @"Data Source=" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
             }
         }
         public int checkCnn()
         {
             try
             {
-                string temp = @"Data Source=" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                string temp = @"Data Source=" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
                 using (SqlConnection connect = new SqlConnection(temp))
                 {
 
@@ -36,7 +36,7 @@ namespace QuanLyKhoHang
             catch
             {
 
-                string temp = @"Data Source=localhost;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                string temp = @"Data Source=localhost;Initial Catalog=QuanLyKhoHang;Integrated Security=True";
                 using (SqlConnection connect = new SqlConnection(temp))
                 {
 
