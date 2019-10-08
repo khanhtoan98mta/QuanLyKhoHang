@@ -18,8 +18,8 @@ namespace QuanlyKhohang.GUI
         }
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            if(e.Node.Text=="Nhà cung cấp")
-                webBrowser1.Navigate(@"C:\Users\dell\Documents\Visual Studio 2015\Projects\QuanlyKhohang\QuanlyKhohang\Guide\Nhacungcap.html");
+            if (e.Node.Text == "Nhà cung cấp")
+                webBrowser1.Controls.Add(new Nhacungcap());
             if (e.Node.Text == "Khách hàng")
                 webBrowser1.Navigate(@"C:\Users\dell\Documents\Visual Studio 2015\Projects\QuanlyKhohang\QuanlyKhohang\Guide\Khachhang.html");
             if (e.Node.Text == "Sản phẩm")
