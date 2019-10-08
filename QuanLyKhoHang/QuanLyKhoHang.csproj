@@ -98,6 +98,48 @@
     <Compile Include="GUI\frmQuanLyNguoiDung.Designer.cs">
       <DependentUpon>frmQuanLyNguoiDung.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QLKhohang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QLKhohang.Designer.cs">
+      <DependentUpon>QLKhohang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User_Control\Huongdan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User_Control\Huongdan.Designer.cs">
+      <DependentUpon>Huongdan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User_Control\Khachhang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User_Control\Khachhang.Designer.cs">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User_Control\Nhacungcap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User_Control\Nhacungcap.Designer.cs">
+      <DependentUpon>Nhacungcap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User_Control\Phieunhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User_Control\Phieunhap.Designer.cs">
+      <DependentUpon>Phieunhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User_Control\Phieuxuat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User_Control\Phieuxuat.Designer.cs">
+      <DependentUpon>Phieuxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\User_Control\Sanpham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User_Control\Sanpham.Designer.cs">
+      <DependentUpon>Sanpham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\Form1.resx">
@@ -114,6 +156,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQuanLyNguoiDung.resx">
       <DependentUpon>frmQuanLyNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QLKhohang.resx">
+      <DependentUpon>QLKhohang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User_Control\Khachhang.resx">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User_Control\Nhacungcap.resx">
+      <DependentUpon>Nhacungcap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User_Control\Phieunhap.resx">
+      <DependentUpon>Phieunhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User_Control\Phieuxuat.resx">
+      <DependentUpon>Phieuxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User_Control\Sanpham.resx">
+      <DependentUpon>Sanpham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

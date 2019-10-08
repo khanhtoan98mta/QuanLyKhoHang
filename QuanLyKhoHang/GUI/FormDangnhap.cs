@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanlyKhoHang;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,13 @@ namespace QuanLyKhoHang
         private void FormDăngnhap_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaGradientCircleButton1_Click(object sender, EventArgs e)
+        {
+            QLKhohang f1 = new QLKhohang();
+            this.Hide();
+            f1.Show();
         }
     }
 }
