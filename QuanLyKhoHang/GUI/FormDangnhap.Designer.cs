@@ -122,6 +122,7 @@
             this.gunaGradientCircleButton1.OnHoverImage = null;
             this.gunaGradientCircleButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaGradientCircleButton1.Text = "Đăng nhập";
+            this.gunaGradientCircleButton1.Click += new System.EventHandler(this.gunaGradientCircleButton1_Click);
             // 
             // FormDăngnhap
             // 
