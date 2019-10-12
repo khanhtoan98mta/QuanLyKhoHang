@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\QuanLyKhachSan\QuanLyKhachSan\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>C:\Users\admin\Downloads\Guna.UI.dll</HintPath>
+      <HintPath>..\..\QuanLyKhachSan\QuanLyKhachSan\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
