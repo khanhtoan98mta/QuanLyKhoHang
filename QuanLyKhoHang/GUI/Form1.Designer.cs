@@ -152,13 +152,13 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(196, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(320, 48);
+            this.label1.Size = new System.Drawing.Size(255, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản lý kho hàng";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1227, 557);
             this.Controls.Add(this.panel2);
