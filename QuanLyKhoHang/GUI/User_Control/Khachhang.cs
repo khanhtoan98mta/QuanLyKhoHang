@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyKhoHang;
 using System.Data.SqlClient;
+//using QuanlyKhohang.BUS;
 
 namespace QuanlyKhohang.GUI
 {
@@ -29,7 +30,7 @@ namespace QuanlyKhohang.GUI
 
             using (SqlConnection connect = new SqlConnection(con))
             {
-                string query = " select Khachhang.IDKH as 'Mã khách hàng', Khachhang.TenKH as 'Họ tên' , Khachhang.Dienthoai as 'SĐT' "
+                string query = " select Khachhang.IDKH as 'Mã khách hàng', Khachhang.TenKH as 'Họ tên' , Khachhang.Dienthoai as 'SĐT' " 
  + ", Khachhang.Email as 'Email', Khachhang.Diachi as 'Địa chỉ' from Khachhang ";
                 connect.Open();
                 SqlDataAdapter apter = new SqlDataAdapter(query, connect);

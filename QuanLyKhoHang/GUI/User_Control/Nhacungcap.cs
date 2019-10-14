@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyKhoHang;
+using System.Data.SqlClient;
 //using QuanlyKhohang.BUS;
 
 namespace QuanlyKhohang.GUI
@@ -20,7 +22,20 @@ namespace QuanlyKhohang.GUI
         }
         private void Nhacungcap_Load(object sender, EventArgs e)
         {
-          
+            dataGridView1.Columns.Clear();
+            ConnectString cnn = new ConnectString();
+            string con = cnn.getConnectionString(0);
+            DataSet data = new DataSet();
+
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+                string query = "select Nhacungcap.IDNCC as 'Mã nhà cc' , Nhacungcap.TenNCC as 'Tên nhà cc',Nhacungcap.Dienthoai as 'SĐT' , Diachi as 'Địa chỉ' , Nhacungcap.Email as 'Email' from Nhacungcap   ";
+                connect.Open();
+                SqlDataAdapter apter = new SqlDataAdapter(query, connect);
+                apter.Fill(data);
+                connect.Close();
+            }
+            dataGridView1.DataSource = data.Tables[0];
         }
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
