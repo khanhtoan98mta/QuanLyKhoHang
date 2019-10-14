@@ -307,7 +307,6 @@
             this.btnChitietPX.TabIndex = 21;
             this.btnChitietPX.Text = "Chi tiết phiếu nhập";
             this.btnChitietPX.UseVisualStyleBackColor = false;
-            this.btnChitietPX.Click += new System.EventHandler(this.btnChitietPX_Click);
             // 
             // dtPNgaynhap
             // 
