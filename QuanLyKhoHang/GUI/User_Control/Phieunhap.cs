@@ -28,7 +28,7 @@ namespace QuanlyKhohang.GUI
         {
             dataGridView1.Columns.Clear();
             ConnectString cnn = new ConnectString();
-            string con = cnn.getConnectionString(0);
+            string con = cnn.getConnectionString(1);
             DataSet data = new DataSet();
 
             using (SqlConnection connect = new SqlConnection(con))
