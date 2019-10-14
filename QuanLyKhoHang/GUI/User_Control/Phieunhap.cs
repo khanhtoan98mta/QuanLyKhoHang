@@ -39,20 +39,7 @@ namespace QuanlyKhohang.GUI
         }
         #endregion
         #region  load data with paramerter
-        private DataSet GetData(string query)
-        {
-            DataSet res;
-            using (SqlConnection connection = new SqlConnection(cnn.getConnectionString())
-            {
-                connection.Open();
-
-               
-
-
-                connection.Close();
-            }
-            return res;
-        }
+        
 
         #endregion
 
