@@ -16,6 +16,22 @@ namespace QuanlyKhohang.GUI
     public partial class Chitietphieunhap : Form
     {
         string Id;
+        private string DataAccess(string query)
+        {
+            ConnectString cnn = new ConnectString();
+            string con = cnn.getConnectionString(0);
+
+
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+
+                connect.Open();
+                SqlCommand apter = new SqlCommand(query, connect);
+                var x = apter.ExecuteScalar();
+                return x.ToString();
+                connect.Close();
+            }
+        }
         public Chitietphieunhap(string id)
         {
             InitializeComponent();
@@ -43,6 +59,8 @@ namespace QuanlyKhohang.GUI
                 connect.Close();
             }
             dataGridView2.DataSource = data.Tables[0];
+            txtSoluong.Text = DataAccess("select * from GetAmount(" + txtPNID.Text + ")");
+            txtTongtien.Text = DataAccess("select * from GetTotal(" + txtPNID.Text + ")");
         }
 
         #region CellContentClick
