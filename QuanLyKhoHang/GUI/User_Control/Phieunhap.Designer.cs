@@ -286,7 +286,6 @@
             this.btnNhanvien.Text = "...";
             this.btnNhanvien.UseVisualStyleBackColor = true;
             this.btnNhanvien.Visible = false;
-            
             // 
             // btnNCC
             // 
@@ -297,7 +296,6 @@
             this.btnNCC.Text = "...";
             this.btnNCC.UseVisualStyleBackColor = true;
             this.btnNCC.Visible = false;
-            
             // 
             // btnChitietPX
             // 
@@ -309,7 +307,7 @@
             this.btnChitietPX.TabIndex = 21;
             this.btnChitietPX.Text = "Chi tiết phiếu nhập";
             this.btnChitietPX.UseVisualStyleBackColor = false;
-            
+            this.btnChitietPX.Click += new System.EventHandler(this.btnChitietPX_Click);
             // 
             // dtPNgaynhap
             // 
