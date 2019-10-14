@@ -69,18 +69,20 @@
             // email
             // 
             this.email.AutoSize = true;
+            this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.email.Location = new System.Drawing.Point(627, 30);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(42, 15);
+            this.email.Size = new System.Drawing.Size(52, 20);
             this.email.TabIndex = 11;
             this.email.Text = "Email:";
             // 
             // label
             // 
             this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.Location = new System.Drawing.Point(334, 77);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(66, 15);
+            this.label.Size = new System.Drawing.Size(85, 20);
             this.label.TabIndex = 9;
             this.label.Text = "Điện thoại:";
             // 
@@ -110,18 +112,20 @@
             // diachi
             // 
             this.diachi.AutoSize = true;
+            this.diachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.diachi.Location = new System.Drawing.Point(334, 29);
             this.diachi.Name = "diachi";
-            this.diachi.Size = new System.Drawing.Size(48, 15);
+            this.diachi.Size = new System.Drawing.Size(61, 20);
             this.diachi.TabIndex = 5;
             this.diachi.Text = "Địa chỉ:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(22, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 15);
+            this.label3.Size = new System.Drawing.Size(127, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Tên khách hàng:";
             // 
@@ -163,18 +167,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(22, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 15);
+            this.label1.Size = new System.Drawing.Size(119, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Khách hàng:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(441, 28);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 15);
+            this.label9.Size = new System.Drawing.Size(61, 20);
             this.label9.TabIndex = 8;
             this.label9.Text = "Địa chỉ:";
             // 
@@ -189,9 +195,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(36, 28);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 15);
+            this.label8.Size = new System.Drawing.Size(127, 20);
             this.label8.TabIndex = 6;
             this.label8.Text = "Tên khách hàng:";
             // 
