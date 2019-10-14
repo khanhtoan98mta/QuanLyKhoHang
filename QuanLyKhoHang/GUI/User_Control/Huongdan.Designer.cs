@@ -33,10 +33,12 @@
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Sản phẩm");
             System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Phiếu nhập");
             System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Phiếu xuất");
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Huongdan));
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.test1 = new Guna.UI.WinForms.GunaButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -44,16 +46,16 @@
             // webBrowser1
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(3, 17);
+            this.webBrowser1.Location = new System.Drawing.Point(3, 20);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(650, 512);
+            this.webBrowser1.Size = new System.Drawing.Size(650, 509);
             this.webBrowser1.TabIndex = 3;
             // 
             // treeView1
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.Location = new System.Drawing.Point(3, 17);
+            this.treeView1.Location = new System.Drawing.Point(3, 20);
             this.treeView1.Name = "treeView1";
             treeNode1.Name = "Node0";
             treeNode1.Text = "Nhà cung cấp";
@@ -71,7 +73,7 @@
             treeNode3,
             treeNode4,
             treeNode5});
-            this.treeView1.Size = new System.Drawing.Size(198, 515);
+            this.treeView1.Size = new System.Drawing.Size(198, 512);
             this.treeView1.TabIndex = 2;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
@@ -87,6 +89,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.test1);
             this.groupBox2.Controls.Add(this.webBrowser1);
             this.groupBox2.Location = new System.Drawing.Point(210, 3);
             this.groupBox2.Name = "groupBox2";
@@ -95,9 +98,31 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chi tiết";
             // 
+            // test1
+            // 
+            this.test1.AnimationHoverSpeed = 0.07F;
+            this.test1.AnimationSpeed = 0.03F;
+            this.test1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.test1.BorderColor = System.Drawing.Color.Black;
+            this.test1.FocusedColor = System.Drawing.Color.Empty;
+            this.test1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.test1.ForeColor = System.Drawing.Color.White;
+            this.test1.Image = ((System.Drawing.Image)(resources.GetObject("test1.Image")));
+            this.test1.ImageSize = new System.Drawing.Size(20, 20);
+            this.test1.Location = new System.Drawing.Point(49, 54);
+            this.test1.Name = "test1";
+            this.test1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.test1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.test1.OnHoverForeColor = System.Drawing.Color.White;
+            this.test1.OnHoverImage = null;
+            this.test1.OnPressedColor = System.Drawing.Color.Black;
+            this.test1.Size = new System.Drawing.Size(488, 42);
+            this.test1.TabIndex = 4;
+            this.test1.Text = "gunaButton1";
+            // 
             // Huongdan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -116,5 +141,6 @@
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private Guna.UI.WinForms.GunaButton test1;
     }
 }

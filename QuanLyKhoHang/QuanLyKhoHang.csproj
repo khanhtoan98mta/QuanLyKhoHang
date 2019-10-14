@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\QuanLyKhachSan\QuanLyKhachSan\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\QLthuvien\Guna.UI.dll</HintPath>
+      <HintPath>..\..\QuanLyKhachSan\QuanLyKhachSan\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -50,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\ConnectString.cs" />
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QLKhohang.resx">
       <DependentUpon>QLKhohang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User_Control\Huongdan.resx">
+      <DependentUpon>Huongdan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User_Control\Khachhang.resx">
       <DependentUpon>Khachhang.cs</DependentUpon>
