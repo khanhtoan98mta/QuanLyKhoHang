@@ -30,7 +30,7 @@ namespace QuanlyKhoHang
                 panel1.Controls.Add(new Huongdan());
             else if(ts.Text == "Đăng xuất")
             {
-                FormDăngnhap frr = new FormDăngnhap();
+                FormDangnhap frr = new FormDangnhap();
                 this.Hide();
                 frr.Show();
             }

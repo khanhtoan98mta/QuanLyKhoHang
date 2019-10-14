@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace QuanLyKhoHang
 {
-    public partial class FormDăngnhap : Form
+    public partial class FormDangnhap : Form
     {
-        public FormDăngnhap()
+        public FormDangnhap()
         {
             InitializeComponent();
             

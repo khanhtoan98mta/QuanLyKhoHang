@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhoHang
 {
-    partial class FormDăngnhap
+    partial class FormDangnhap
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDăngnhap));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangnhap));
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
@@ -124,7 +124,7 @@
             this.gunaGradientCircleButton1.Text = "Đăng nhập";
             this.gunaGradientCircleButton1.Click += new System.EventHandler(this.gunaGradientCircleButton1_Click);
             // 
-            // FormDăngnhap
+            // FormDangnhap
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -138,7 +138,7 @@
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormDăngnhap";
+            this.Name = "FormDangnhap";
             this.Load += new System.EventHandler(this.FormDăngnhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

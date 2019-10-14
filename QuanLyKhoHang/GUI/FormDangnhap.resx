@@ -169,7 +169,7 @@
     <value>gunaLabel1</value>
   </data>
   <data name="&gt;&gt;gunaLabel1.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.5.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.4.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
   </data>
   <data name="&gt;&gt;gunaLabel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -193,7 +193,7 @@
     <value>gunaTextBox1</value>
   </data>
   <data name="&gt;&gt;gunaTextBox1.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.5.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
+    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.4.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
   </data>
   <data name="&gt;&gt;gunaTextBox1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -226,7 +226,7 @@
     <value>gunaLabel2</value>
   </data>
   <data name="&gt;&gt;gunaLabel2.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.5.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
+    <value>Guna.UI.WinForms.GunaLabel, Guna.UI, Version=1.4.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
   </data>
   <data name="&gt;&gt;gunaLabel2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -250,7 +250,7 @@
     <value>gunaTextBox2</value>
   </data>
   <data name="&gt;&gt;gunaTextBox2.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.5.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
+    <value>Guna.UI.WinForms.GunaTextBox, Guna.UI, Version=1.4.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
   </data>
   <data name="&gt;&gt;gunaTextBox2.Parent" xml:space="preserve">
     <value>$this</value>
@@ -271,7 +271,7 @@
     <value>gunaImageButton1</value>
   </data>
   <data name="&gt;&gt;gunaImageButton1.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaImageButton, Guna.UI, Version=1.5.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
+    <value>Guna.UI.WinForms.GunaImageButton, Guna.UI, Version=1.4.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
   </data>
   <data name="&gt;&gt;gunaImageButton1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -298,7 +298,7 @@
     <value>gunaControlBox1</value>
   </data>
   <data name="&gt;&gt;gunaControlBox1.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaControlBox, Guna.UI, Version=1.5.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
+    <value>Guna.UI.WinForms.GunaControlBox, Guna.UI, Version=1.4.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
   </data>
   <data name="&gt;&gt;gunaControlBox1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -322,7 +322,7 @@
     <value>gunaGradientCircleButton1</value>
   </data>
   <data name="&gt;&gt;gunaGradientCircleButton1.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaGradientCircleButton, Guna.UI, Version=1.5.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
+    <value>Guna.UI.WinForms.GunaGradientCircleButton, Guna.UI, Version=1.4.0.0, Culture=neutral, PublicKeyToken=537479e8cf7071a7</value>
   </data>
   <data name="&gt;&gt;gunaGradientCircleButton1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1347,7 +1347,7 @@
     <value>FormDăngnhap</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormDăngnhap</value>
+    <value>FormDangnhap</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
