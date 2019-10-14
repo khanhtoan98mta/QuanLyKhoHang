@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using QuanLyKhoHang;
 //using QuanlyKhohang.BUS;
 //using GUI;
 //ousing QuanlyKhohang.DataLayer;
@@ -20,7 +22,7 @@ namespace QuanlyKhohang.GUI
         {
             InitializeComponent();
             cnn = new ConnectString();
-           
+
         }
         private void Phieunhap_Load(object sender, EventArgs e)
         {
@@ -44,11 +46,11 @@ namespace QuanlyKhohang.GUI
         {
             ConnectString cnn = new ConnectString();
             string con = cnn.getConnectionString(0);
-            
+
 
             using (SqlConnection connect = new SqlConnection(con))
             {
-               
+
                 connect.Open();
                 SqlCommand apter = new SqlCommand(query, connect);
                 var x = apter.ExecuteScalar();
@@ -75,27 +77,14 @@ namespace QuanlyKhohang.GUI
         }
         #endregion
         #region  load data with paramerter
-        private DataSet GetData(string query)
-        {
-            DataSet res;
-            using (SqlConnection connection = new SqlConnection(cnn.getConnectionString())
-            {
-                connection.Open();
 
-               
-
-
-                connection.Close();
-            }
-            return res;
-        }
 
         #endregion
 
         private void btnChitietPX_Click(object sender, EventArgs e)
         {
-            Chitietphieunhap f = new Chitietphieunhap(txtPNID.Text);
-            f.Show();
+            //Chitietphieunhap f = new Chitietphieunhap(txtPNID.Text);
+            //f.Show();
         }
     }
 
