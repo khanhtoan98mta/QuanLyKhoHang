@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using QuanlyKhohang.GUI;
 using QuanLyKhoHang;
 using System.Data.SqlClient;
-
+using QuanLyKhoHang.GUI;
 namespace QuanlyKhohang.GUI
 {
     public partial class Phieuxuat : UserControl
@@ -45,6 +45,11 @@ namespace QuanlyKhohang.GUI
           
         }
 
-       
+        private void btnChitietPX_Click(object sender, EventArgs e)
+        {
+            FormCT_Phieuxuat fr = new FormCT_Phieuxuat();
+            int index = dataGridView1.SelectedRows.Count ;
+            
+        }
     }
 }
