@@ -16,5 +16,10 @@ namespace QuanLyKhoHang
         {
             InitializeComponent();
         }
+
+        private void frmPhieuXuat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

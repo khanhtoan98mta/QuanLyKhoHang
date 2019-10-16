@@ -48,7 +48,10 @@ namespace QuanlyKhohang.GUI
         private void btnChitietPX_Click(object sender, EventArgs e)
         {
             FormCT_Phieuxuat fr = new FormCT_Phieuxuat();
-            int index = dataGridView1.SelectedRows.Count ;
+            int index = dataGridView1.CurrentCell.RowIndex;
+            int id = Convert.ToInt32(dataGridView1.Rows[index].Cells["Mã phiếu"].Value.ToString());
+            fr.setId(id);
+            fr.Show();
             
         }
     }
