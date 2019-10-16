@@ -25,15 +25,45 @@ namespace QuanLyKhoHang.GUI
         {
             id = _id;
         }
+        int TinhTien()
+        {
+            int temp = Convert.ToInt32(dtgv_CtPhieuXuat.Rows[0].Cells["Giá"].Value.ToString());
+            int Sum = 0;
+            for(int i=0;i<dtgv_CtPhieuXuat.Rows.Count;i++)
+            {
+                Sum = Sum + Convert.ToInt32(dtgv_CtPhieuXuat.Rows[i].Cells["Giá"].Value.ToString());
+            }
+            return Sum;
+        }
         void load()
         {
-            conn = new SqlConnection(cnn.getConnectionString(1));
-            query = "select *from ChitietPhieuxuat where PXID='" + id.ToString() + "'";
+            try
+            {
+                conn = new SqlConnection(cnn.getConnectionString(1));
+                SqlCommand cmd = new SqlCommand("Chitietphieuxuat_view", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", id);
+                adap = new SqlDataAdapter(cmd);
+                DataTable data_ct = new DataTable();
+                adap.Fill(data_ct);
+                dtgv_CtPhieuXuat.DataSource = data_ct;
+            }
+            catch
+            {
+                
+            }
+            txt_MaPhieu.Text = id.ToString();
+            txt_TongTien.Text = TinhTien().ToString();
+              
             
         }
 
         private void FormCT_Phieuxuat_Load(object sender, EventArgs e)
         {
+            txt_MaPhieu.Enabled = false;
+            txt_TongTien.Enabled = false;
+            load();
+            
 
         }
     }
