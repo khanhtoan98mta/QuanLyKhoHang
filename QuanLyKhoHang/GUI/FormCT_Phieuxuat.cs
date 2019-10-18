@@ -27,6 +27,7 @@ namespace QuanLyKhoHang.GUI
         }
         int TinhTien()
         {
+            if (dtgv_CtPhieuXuat.Rows.Count == 0) return 0;
             int temp = Convert.ToInt32(dtgv_CtPhieuXuat.Rows[0].Cells["Giá"].Value.ToString());
             int Sum = 0;
             for(int i=0;i<dtgv_CtPhieuXuat.Rows.Count;i++)
