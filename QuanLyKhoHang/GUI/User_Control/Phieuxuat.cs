@@ -21,7 +21,11 @@ namespace QuanlyKhohang.GUI
         public Phieuxuat()
         {
             InitializeComponent();
-         
+        }
+        void load(int index)
+        {
+            txt_KH.Text = dataGridView1.Rows[index].Cells["Khách hàng"].Value.ToString();
+            txt_Nhanvien.Text = dataGridView1.Rows[index].Cells["Nhân viên"].Value.ToString();
         }
         private void Phieuxuat_Load_1(object sender, EventArgs e)
         {
@@ -39,10 +43,14 @@ namespace QuanlyKhohang.GUI
                 connect.Close();
             }
             dataGridView1.DataSource = data.Tables[0];
+            load(0);
+            
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-          
+            int index = dataGridView1.CurrentCell.RowIndex;
+            load(index);
+           
         }
 
         private void btnChitietPX_Click(object sender, EventArgs e)
@@ -53,6 +61,13 @@ namespace QuanlyKhohang.GUI
             fr.setId(id);
             fr.Show();
             
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            FormAdd_PhieuXuat fr = new FormAdd_PhieuXuat();
+            fr.Show();
+
         }
     }
 }

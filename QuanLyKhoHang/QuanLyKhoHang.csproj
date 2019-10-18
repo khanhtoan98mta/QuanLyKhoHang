@@ -55,6 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\ConnectString.cs" />
+    <Compile Include="GUI\FormAdd_PhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAdd_PhieuXuat.Designer.cs">
+      <DependentUpon>FormAdd_PhieuXuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormAdd_PhieuXuat.resx">
+      <DependentUpon>FormAdd_PhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

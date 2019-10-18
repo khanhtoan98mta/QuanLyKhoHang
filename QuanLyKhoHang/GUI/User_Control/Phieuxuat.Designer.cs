@@ -36,16 +36,14 @@
             this.dtPNgayxuat = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnChitietPX = new System.Windows.Forms.Button();
-            this.txtTongsoluong = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
-            this.txtTongtien = new System.Windows.Forms.TextBox();
+            this.txt_Tongtien = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNhanvien = new System.Windows.Forms.TextBox();
+            this.txt_Nhanvien = new System.Windows.Forms.TextBox();
             this.diachi = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtKH = new System.Windows.Forms.TextBox();
+            this.txt_KH = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTKTenKH = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -126,16 +124,14 @@
             this.groupBox1.Controls.Add(this.btnKH);
             this.groupBox1.Controls.Add(this.btnChitietPX);
             this.groupBox1.Controls.Add(this.dtPNgayxuat);
-            this.groupBox1.Controls.Add(this.txtTongsoluong);
-            this.groupBox1.Controls.Add(this.email);
             this.groupBox1.Controls.Add(this.label);
-            this.groupBox1.Controls.Add(this.txtTongtien);
+            this.groupBox1.Controls.Add(this.txt_Tongtien);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtNhanvien);
+            this.groupBox1.Controls.Add(this.txt_Nhanvien);
             this.groupBox1.Controls.Add(this.diachi);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtKH);
+            this.groupBox1.Controls.Add(this.txt_KH);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(4, 2);
@@ -157,23 +153,6 @@
             this.btnChitietPX.UseVisualStyleBackColor = false;
             this.btnChitietPX.Click += new System.EventHandler(this.btnChitietPX_Click);
             // 
-            // txtTongsoluong
-            // 
-            this.txtTongsoluong.Location = new System.Drawing.Point(745, 29);
-            this.txtTongsoluong.Name = "txtTongsoluong";
-            this.txtTongsoluong.ReadOnly = true;
-            this.txtTongsoluong.Size = new System.Drawing.Size(83, 24);
-            this.txtTongsoluong.TabIndex = 12;
-            // 
-            // email
-            // 
-            this.email.AutoSize = true;
-            this.email.Location = new System.Drawing.Point(651, 29);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(107, 18);
-            this.email.TabIndex = 11;
-            this.email.Text = "Tổng số lượng:";
-            // 
             // label
             // 
             this.label.AutoSize = true;
@@ -183,13 +162,13 @@
             this.label.TabIndex = 9;
             this.label.Text = "Tổng tiền:";
             // 
-            // txtTongtien
+            // txt_Tongtien
             // 
-            this.txtTongtien.Location = new System.Drawing.Point(433, 83);
-            this.txtTongtien.Name = "txtTongtien";
-            this.txtTongtien.ReadOnly = true;
-            this.txtTongtien.Size = new System.Drawing.Size(143, 24);
-            this.txtTongtien.TabIndex = 8;
+            this.txt_Tongtien.Location = new System.Drawing.Point(433, 83);
+            this.txt_Tongtien.Name = "txt_Tongtien";
+            this.txt_Tongtien.ReadOnly = true;
+            this.txt_Tongtien.Size = new System.Drawing.Size(143, 24);
+            this.txt_Tongtien.TabIndex = 8;
             // 
             // label5
             // 
@@ -199,12 +178,12 @@
             this.label5.Size = new System.Drawing.Size(0, 18);
             this.label5.TabIndex = 7;
             // 
-            // txtNhanvien
+            // txt_Nhanvien
             // 
-            this.txtNhanvien.Location = new System.Drawing.Point(433, 29);
-            this.txtNhanvien.Name = "txtNhanvien";
-            this.txtNhanvien.Size = new System.Drawing.Size(143, 24);
-            this.txtNhanvien.TabIndex = 6;
+            this.txt_Nhanvien.Location = new System.Drawing.Point(433, 29);
+            this.txt_Nhanvien.Name = "txt_Nhanvien";
+            this.txt_Nhanvien.Size = new System.Drawing.Size(143, 24);
+            this.txt_Nhanvien.TabIndex = 6;
             // 
             // diachi
             // 
@@ -232,12 +211,12 @@
             this.label2.Size = new System.Drawing.Size(0, 18);
             this.label2.TabIndex = 2;
             // 
-            // txtKH
+            // txt_KH
             // 
-            this.txtKH.Location = new System.Drawing.Point(137, 29);
-            this.txtKH.Name = "txtKH";
-            this.txtKH.Size = new System.Drawing.Size(143, 24);
-            this.txtKH.TabIndex = 1;
+            this.txt_KH.Location = new System.Drawing.Point(137, 29);
+            this.txt_KH.Name = "txt_KH";
+            this.txt_KH.Size = new System.Drawing.Size(143, 24);
+            this.txt_KH.TabIndex = 1;
             // 
             // label1
             // 
@@ -372,6 +351,7 @@
             this.btnThem.TabIndex = 27;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // Phieuxuat
             // 
@@ -409,16 +389,14 @@
         private System.Windows.Forms.DateTimePicker dtPNgayxuat;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnChitietPX;
-        private System.Windows.Forms.TextBox txtTongsoluong;
-        private System.Windows.Forms.Label email;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.TextBox txtTongtien;
+        private System.Windows.Forms.TextBox txt_Tongtien;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNhanvien;
+        private System.Windows.Forms.TextBox txt_Nhanvien;
         private System.Windows.Forms.Label diachi;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtKH;
+        private System.Windows.Forms.TextBox txt_KH;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTKTenKH;
         private System.Windows.Forms.GroupBox groupBox3;
