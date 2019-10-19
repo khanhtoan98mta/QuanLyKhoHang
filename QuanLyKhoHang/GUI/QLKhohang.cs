@@ -1,6 +1,7 @@
 ﻿
 using QuanlyKhohang.GUI;
 using QuanLyKhoHang;
+using QuanLyKhoHang.GUI.User_Control;
 using System;
 using System.Windows.Forms;
 
@@ -28,6 +29,8 @@ namespace QuanlyKhoHang
                 panel1.Controls.Add(new Phieuxuat());
             else if (ts.Text == "Hướng dẫn")
                 panel1.Controls.Add(new Huongdan());
+            else if (ts.Text == "Thống kê")
+                panel1.Controls.Add(new ThongKe());
             else if(ts.Text == "Đăng xuất")
             {
                 FormDangnhap frr = new FormDangnhap();
@@ -48,5 +51,7 @@ namespace QuanlyKhoHang
         {
 
         }
+
+        
     }
 }

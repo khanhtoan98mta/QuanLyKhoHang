@@ -157,6 +157,12 @@
     <Compile Include="GUI\User_Control\Sanpham.Designer.cs">
       <DependentUpon>Sanpham.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\User_Control\ThongKe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\User_Control\ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FormAdd_PhieuXuat.resx">
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User_Control\Sanpham.resx">
       <DependentUpon>Sanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\User_Control\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
