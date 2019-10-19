@@ -16,5 +16,10 @@ namespace QuanLyKhoHang.GUI.User_Control
         {
             InitializeComponent();
         }
+
+        private void gunaLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
