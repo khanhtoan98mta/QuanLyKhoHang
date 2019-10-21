@@ -40,14 +40,18 @@
             this.cb_Nhanvien = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_Khachhang = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.gunaTextBox3 = new Guna.UI.WinForms.GunaTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.gunaTextBox4 = new Guna.UI.WinForms.GunaTextBox();
+            this.txt_Enail = new Guna.UI.WinForms.GunaTextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.txt_SDT = new Guna.UI.WinForms.GunaTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_DiaChi = new Guna.UI.WinForms.GunaTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txt_Khachhang = new Guna.UI.WinForms.GunaTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_MaPhieu = new System.Windows.Forms.TextBox();
+            this.dtp_Ngayxuat = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(479, 163);
+            this.label2.Location = new System.Drawing.Point(479, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 17);
             this.label2.TabIndex = 3;
@@ -115,11 +119,12 @@
             this.btn_luu.TabIndex = 9;
             this.btn_luu.Text = "Lưu";
             this.btn_luu.UseVisualStyleBackColor = true;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(479, 102);
+            this.label4.Location = new System.Drawing.Point(479, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 17);
             this.label4.TabIndex = 10;
@@ -134,7 +139,7 @@
             this.txt_DonGia.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_DonGia.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_DonGia.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_DonGia.Location = new System.Drawing.Point(582, 85);
+            this.txt_DonGia.Location = new System.Drawing.Point(582, 68);
             this.txt_DonGia.Name = "txt_DonGia";
             this.txt_DonGia.PasswordChar = '\0';
             this.txt_DonGia.Size = new System.Drawing.Size(160, 34);
@@ -143,7 +148,7 @@
             // cb_Nhanvien
             // 
             this.cb_Nhanvien.FormattingEnabled = true;
-            this.cb_Nhanvien.Location = new System.Drawing.Point(582, 160);
+            this.cb_Nhanvien.Location = new System.Drawing.Point(582, 132);
             this.cb_Nhanvien.Name = "cb_Nhanvien";
             this.cb_Nhanvien.Size = new System.Drawing.Size(160, 24);
             this.cb_Nhanvien.TabIndex = 12;
@@ -158,11 +163,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.gunaTextBox4);
+            this.groupBox1.Controls.Add(this.txt_Enail);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.gunaTextBox3);
+            this.groupBox1.Controls.Add(this.txt_SDT);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.gunaTextBox2);
+            this.groupBox1.Controls.Add(this.txt_DiaChi);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txt_Khachhang);
             this.groupBox1.Controls.Add(this.label1);
@@ -173,14 +178,79 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Khách hàng";
             // 
-            // label1
+            // txt_Enail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Khách hàng:";
+            this.txt_Enail.BaseColor = System.Drawing.Color.White;
+            this.txt_Enail.BorderColor = System.Drawing.Color.Silver;
+            this.txt_Enail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Enail.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_Enail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_Enail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_Enail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Enail.Location = new System.Drawing.Point(120, 166);
+            this.txt_Enail.Name = "txt_Enail";
+            this.txt_Enail.PasswordChar = '\0';
+            this.txt_Enail.Size = new System.Drawing.Size(160, 30);
+            this.txt_Enail.TabIndex = 6;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 179);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 17);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Email:";
+            // 
+            // txt_SDT
+            // 
+            this.txt_SDT.BaseColor = System.Drawing.Color.White;
+            this.txt_SDT.BorderColor = System.Drawing.Color.Silver;
+            this.txt_SDT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_SDT.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_SDT.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_SDT.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_SDT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_SDT.Location = new System.Drawing.Point(120, 120);
+            this.txt_SDT.Name = "txt_SDT";
+            this.txt_SDT.PasswordChar = '\0';
+            this.txt_SDT.Size = new System.Drawing.Size(160, 30);
+            this.txt_SDT.TabIndex = 4;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 133);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 17);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Số điện thoại:";
+            // 
+            // txt_DiaChi
+            // 
+            this.txt_DiaChi.BaseColor = System.Drawing.Color.White;
+            this.txt_DiaChi.BorderColor = System.Drawing.Color.Silver;
+            this.txt_DiaChi.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_DiaChi.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_DiaChi.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_DiaChi.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_DiaChi.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_DiaChi.Location = new System.Drawing.Point(120, 73);
+            this.txt_DiaChi.Name = "txt_DiaChi";
+            this.txt_DiaChi.PasswordChar = '\0';
+            this.txt_DiaChi.Size = new System.Drawing.Size(160, 30);
+            this.txt_DiaChi.TabIndex = 2;
+            this.txt_DiaChi.TextChanged += new System.EventHandler(this.gunaTextBox2_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 86);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 17);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Địa chỉ:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // txt_Khachhang
             // 
@@ -197,85 +267,56 @@
             this.txt_Khachhang.Size = new System.Drawing.Size(160, 30);
             this.txt_Khachhang.TabIndex = 0;
             // 
-            // gunaTextBox2
+            // label1
             // 
-            this.gunaTextBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox2.Location = new System.Drawing.Point(120, 73);
-            this.gunaTextBox2.Name = "gunaTextBox2";
-            this.gunaTextBox2.PasswordChar = '\0';
-            this.gunaTextBox2.Size = new System.Drawing.Size(160, 30);
-            this.gunaTextBox2.TabIndex = 2;
-            this.gunaTextBox2.TextChanged += new System.EventHandler(this.gunaTextBox2_TextChanged);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Khách hàng:";
             // 
-            // label5
+            // label8
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 86);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 17);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Địa chỉ:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(482, 226);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(70, 17);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Mã phiếu:";
             // 
-            // gunaTextBox3
+            // txt_MaPhieu
             // 
-            this.gunaTextBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox3.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox3.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox3.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox3.Location = new System.Drawing.Point(120, 120);
-            this.gunaTextBox3.Name = "gunaTextBox3";
-            this.gunaTextBox3.PasswordChar = '\0';
-            this.gunaTextBox3.Size = new System.Drawing.Size(160, 30);
-            this.gunaTextBox3.TabIndex = 4;
+            this.txt_MaPhieu.Location = new System.Drawing.Point(582, 226);
+            this.txt_MaPhieu.Name = "txt_MaPhieu";
+            this.txt_MaPhieu.Size = new System.Drawing.Size(160, 22);
+            this.txt_MaPhieu.TabIndex = 15;
             // 
-            // label6
+            // dtp_Ngayxuat
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 133);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 17);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Số điện thoại:";
+            this.dtp_Ngayxuat.Location = new System.Drawing.Point(582, 183);
+            this.dtp_Ngayxuat.Name = "dtp_Ngayxuat";
+            this.dtp_Ngayxuat.Size = new System.Drawing.Size(160, 22);
+            this.dtp_Ngayxuat.TabIndex = 16;
             // 
-            // gunaTextBox4
+            // label9
             // 
-            this.gunaTextBox4.BaseColor = System.Drawing.Color.White;
-            this.gunaTextBox4.BorderColor = System.Drawing.Color.Silver;
-            this.gunaTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox4.FocusedBaseColor = System.Drawing.Color.White;
-            this.gunaTextBox4.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaTextBox4.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaTextBox4.Location = new System.Drawing.Point(120, 166);
-            this.gunaTextBox4.Name = "gunaTextBox4";
-            this.gunaTextBox4.PasswordChar = '\0';
-            this.gunaTextBox4.Size = new System.Drawing.Size(160, 30);
-            this.gunaTextBox4.TabIndex = 6;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 179);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 17);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Email:";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(479, 188);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 17);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Ngày xuất:";
             // 
             // FormAdd_PhieuXuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 611);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.dtp_Ngayxuat);
+            this.Controls.Add(this.txt_MaPhieu);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cb_Nhanvien);
             this.Controls.Add(this.txt_DonGia);
@@ -288,6 +329,7 @@
             this.Controls.Add(this.cb_Sanpham);
             this.Controls.Add(this.label2);
             this.Name = "FormAdd_PhieuXuat";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phiếu xuất";
             this.Load += new System.EventHandler(this.Add_PhieuXuat_Load);
             this.panel1.ResumeLayout(false);
@@ -311,13 +353,17 @@
         private System.Windows.Forms.ComboBox cb_Nhanvien;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
+        private Guna.UI.WinForms.GunaTextBox txt_DiaChi;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaTextBox txt_Khachhang;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox4;
+        private Guna.UI.WinForms.GunaTextBox txt_Enail;
         private System.Windows.Forms.Label label7;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox3;
+        private Guna.UI.WinForms.GunaTextBox txt_SDT;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_MaPhieu;
+        private System.Windows.Forms.DateTimePicker dtp_Ngayxuat;
+        private System.Windows.Forms.Label label9;
     }
 }
