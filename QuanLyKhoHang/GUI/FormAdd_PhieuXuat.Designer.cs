@@ -40,7 +40,7 @@
             this.cb_Nhanvien = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_Enail = new Guna.UI.WinForms.GunaTextBox();
+            this.txt_Email = new Guna.UI.WinForms.GunaTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_SDT = new Guna.UI.WinForms.GunaTextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -163,7 +163,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_Enail);
+            this.groupBox1.Controls.Add(this.txt_Email);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txt_SDT);
             this.groupBox1.Controls.Add(this.label6);
@@ -178,20 +178,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Khách hàng";
             // 
-            // txt_Enail
+            // txt_Email
             // 
-            this.txt_Enail.BaseColor = System.Drawing.Color.White;
-            this.txt_Enail.BorderColor = System.Drawing.Color.Silver;
-            this.txt_Enail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_Enail.FocusedBaseColor = System.Drawing.Color.White;
-            this.txt_Enail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txt_Enail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_Enail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_Enail.Location = new System.Drawing.Point(120, 166);
-            this.txt_Enail.Name = "txt_Enail";
-            this.txt_Enail.PasswordChar = '\0';
-            this.txt_Enail.Size = new System.Drawing.Size(160, 30);
-            this.txt_Enail.TabIndex = 6;
+            this.txt_Email.BaseColor = System.Drawing.Color.White;
+            this.txt_Email.BorderColor = System.Drawing.Color.Silver;
+            this.txt_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Email.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_Email.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_Email.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_Email.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Email.Location = new System.Drawing.Point(120, 166);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.PasswordChar = '\0';
+            this.txt_Email.Size = new System.Drawing.Size(160, 30);
+            this.txt_Email.TabIndex = 6;
             // 
             // label7
             // 
@@ -357,7 +357,7 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaTextBox txt_Khachhang;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaTextBox txt_Enail;
+        private Guna.UI.WinForms.GunaTextBox txt_Email;
         private System.Windows.Forms.Label label7;
         private Guna.UI.WinForms.GunaTextBox txt_SDT;
         private System.Windows.Forms.Label label6;

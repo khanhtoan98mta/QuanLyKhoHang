@@ -123,36 +123,41 @@ namespace QuanLyKhoHang.GUI
             {
                 conn = new SqlConnection(cnn.getConnectionString(1));
                 try
-                {   
+                {
+                    conn.Open();
                     SqlCommand cmd = new SqlCommand("Khachhang_insert",conn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@ten", txt_Khachhang.Text.Trim());
                     cmd.Parameters.AddWithValue("@diachi", txt_DiaChi.Text.Trim());
                     cmd.Parameters.AddWithValue("@dienthoai", txt_SDT.Text.Trim());
-                    cmd.Parameters.AddWithValue("@email", txt_Enail.Text.Trim());
+                    cmd.Parameters.AddWithValue("@email", txt_Email.Text.Trim());
                     cmd.ExecuteNonQuery();
-
+                    conn.Close();
                     string nvid = cb_Nhanvien.SelectedValue.ToString();
                     cmd = new SqlCommand("Phieuxuat_insert",conn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@tenkh", txt_Khachhang.Text.Trim());
                     cmd.Parameters.AddWithValue("@nvid", Convert.ToInt32(nvid));
                     cmd.Parameters.AddWithValue("@ngayxuat", dtp_Ngayxuat.Value);
+                    conn.Open();
                     cmd.ExecuteNonQuery();
-
+                    conn.Close();
                     
                     foreach (ListViewItem item in listView_PhieuXuat.Items)
                     {
+                        conn.Open();
                         cmd = new SqlCommand("Chitietphieuxuat_insert_update",conn);
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.Parameters.AddWithValue("@pxid", Convert.ToInt32(txt_MaPhieu.Text.Trim()));
-                        cmd.Parameters.AddWithValue("@spid", Convert.ToInt32(item.SubItems["Mã sản phảm"].ToString()));
-                        cmd.Parameters.AddWithValue("@soluong", Convert.ToInt32(item.SubItems["Số lượng"].ToString()));
+                        cmd.Parameters.AddWithValue("@spid", Convert.ToInt32(item.SubItems[1].Text.ToString()));
+                        cmd.Parameters.AddWithValue("@soluong", Convert.ToInt32(item.SubItems[4].Text.ToString()));
                         cmd.ExecuteNonQuery();
+                        conn.Close();
                     }
 
 
                     MessageBox.Show("Thành công!");
+                   
 
                 }
                 catch
