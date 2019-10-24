@@ -163,6 +163,11 @@ namespace QuanlyKhohang.GUI
             MessageBox.Show("Chỉnh sửa thành công");
             reloadData();
         }
+
+        private void txtTKTenNCC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

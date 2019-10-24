@@ -29,12 +29,12 @@ namespace QuanlyKhohang.GUI
         {
             dataGridView1.Columns.Clear();
             ConnectString cnn = new ConnectString();
-            string con = cnn.getConnectionString(1);
+            string con = cnn.getConnectionString(FormDangnhap.checkConnectionString);
             DataTable dt = new DataTable();
 
             using (SqlConnection connect = new SqlConnection(con))
             {
-                string query = "select *from Phieuxuat_view";
+                string query = "Exec Phieuxuat_view";
                 connect.Open();
                 SqlDataAdapter apter = new SqlDataAdapter(query, connect);
                 apter.Fill(dt);
@@ -52,7 +52,7 @@ namespace QuanlyKhohang.GUI
                 query = "select *from Phieuxuat_view where [Khách hàng] like N'%" + searchStringKh + "%'" +
                     "and [Nhân viên] like N'%"+searchStringNv+"%'";
             
-            conn = new SqlConnection(cnn.getConnectionString(1));
+            conn = new SqlConnection(cnn.getConnectionString(FormDangnhap.checkConnectionString));
             conn.Open();
             SqlDataAdapter adap = new SqlDataAdapter(query, conn);
             DataTable dt = new DataTable();
@@ -103,7 +103,7 @@ namespace QuanlyKhohang.GUI
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            conn = new SqlConnection(cnn.getConnectionString(1));
+            conn = new SqlConnection(cnn.getConnectionString(FormDangnhap.checkConnectionString));
             int index = dataGridView1.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dataGridView1.Rows[index].Cells["Mã phiếu"].Value.ToString());
             SqlCommand cmd = new SqlCommand("Phieuxuat_delete", conn);

@@ -224,6 +224,7 @@
             this.txtTKTenNCC.Name = "txtTKTenNCC";
             this.txtTKTenNCC.Size = new System.Drawing.Size(143, 21);
             this.txtTKTenNCC.TabIndex = 5;
+            this.txtTKTenNCC.TextChanged += new System.EventHandler(this.txtTKTenNCC_TextChanged);
             // 
             // groupBox1
             // 
