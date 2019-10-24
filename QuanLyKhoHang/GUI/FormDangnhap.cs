@@ -13,6 +13,8 @@ namespace QuanLyKhoHang
 {
     public partial class FormDangnhap : Form
     {
+        internal static int checkConnectionString;
+
         public FormDangnhap()
         {
             InitializeComponent();
@@ -29,7 +31,11 @@ namespace QuanLyKhoHang
         {
 
         }
-
+        public void check()
+        {
+            ConnectString check = new ConnectString();
+            checkConnectionString = check.checkCnn();
+        }
         private void gunaGradientCircleButton1_Click(object sender, EventArgs e)
         {
             QLKhohang f1 = new QLKhohang();
