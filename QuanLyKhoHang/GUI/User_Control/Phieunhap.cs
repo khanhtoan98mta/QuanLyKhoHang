@@ -138,6 +138,27 @@ namespace QuanlyKhohang.GUI
                 command.ExecuteNonQuery();
                 connect.Close();
             }
+            MessageBox.Show("Xóa thành công");
+            reloadData();
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            ConnectString cnn = new ConnectString();
+            string con = cnn.getConnectionString(FormDangnhap.checkConnectionString);
+            string query = "EXEC dbo.Phieunhap_insert  @id = @id, @nccid = @nccid, @nvid = @nvid, @ngaynhap =  @ngaynhap";
+            DataSet data = new DataSet();
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+                connect.Open();
+                SqlCommand command = new SqlCommand(query, connect);
+                command.Parameters.AddWithValue("@id", txtPNID.Text);
+                command.Parameters.AddWithValue("@nccid", txtNCCID.Text);
+                command.Parameters.AddWithValue("@nvid", txtNVID.Text);
+                command.Parameters.AddWithValue("@ngaynhap", dtPNgaynhap.Value.ToString("yyyy-MM-dd"));
+                command.ExecuteNonQuery();
+                connect.Close();
+            }
             MessageBox.Show("Thêm thành công");
             reloadData();
         }
