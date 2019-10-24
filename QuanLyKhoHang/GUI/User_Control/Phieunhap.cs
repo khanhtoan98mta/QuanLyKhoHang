@@ -28,7 +28,7 @@ namespace QuanlyKhohang.GUI
         {
             dataGridView1.Columns.Clear();
             ConnectString cnn = new ConnectString();
-            string con = cnn.getConnectionString(0);
+            string con = cnn.getConnectionString(FormDangnhap.checkConnectionString);
             DataSet data = new DataSet();
 
             using (SqlConnection connect = new SqlConnection(con))
@@ -45,7 +45,7 @@ namespace QuanlyKhohang.GUI
         private string DataAccess(string query)
         {
             ConnectString cnn = new ConnectString();
-            string con = cnn.getConnectionString(1);
+            string con = cnn.getConnectionString(FormDangnhap.checkConnectionString);
 
 
             using (SqlConnection connect = new SqlConnection(con))
@@ -55,7 +55,6 @@ namespace QuanlyKhohang.GUI
                 SqlCommand apter = new SqlCommand(query, connect);
                 var x = apter.ExecuteScalar();
                 return x.ToString();
-                connect.Close();
             }
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -85,6 +84,24 @@ namespace QuanlyKhohang.GUI
         {
             //Chitietphieunhap f = new Chitietphieunhap(txtPNID.Text);
             //f.Show();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            string nccid = txtNCCID.Text;
+            string nvid = txtNVID.Text;
+            ConnectString cnn = new ConnectString();
+            string con = cnn.getConnectionString(FormDangnhap.checkConnectionString);
+
+            DataSet data = new DataSet();
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+                string query = "EXEC dbo.Phieunhap_insert @nccid = " + nccid  + ", @nvid = "+ nvid  + ", @ngaynhap = '"+ DateTime.Now.ToString("yyyy-MM-dd") + "'";
+                connect.Open();
+                SqlDataAdapter apter = new SqlDataAdapter(query, connect);
+                connect.Close();
+            }
+            MessageBox.Show("Thêm thành công");
         }
     }
 
