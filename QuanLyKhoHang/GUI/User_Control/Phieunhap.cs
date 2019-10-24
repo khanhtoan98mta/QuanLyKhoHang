@@ -144,9 +144,10 @@ namespace QuanlyKhohang.GUI
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            MessageBox.Show(dtPNgaynhap.Value.ToString("yyyy-MM-dd"));
             ConnectString cnn = new ConnectString();
             string con = cnn.getConnectionString(FormDangnhap.checkConnectionString);
-            string query = "EXEC dbo.Phieunhap_insert  @id = @id, @nccid = @nccid, @nvid = @nvid, @ngaynhap =  @ngaynhap";
+            string query = "EXEC dbo.Phieunhap_update  @id = @id, @nccid = @nccid, @nvid = @nvid, @ngaynhap =  @ngaynhap";
             DataSet data = new DataSet();
             using (SqlConnection connect = new SqlConnection(con))
             {
@@ -159,7 +160,7 @@ namespace QuanlyKhohang.GUI
                 command.ExecuteNonQuery();
                 connect.Close();
             }
-            MessageBox.Show("Thêm thành công");
+            MessageBox.Show("Chỉnh sửa thành công");
             reloadData();
         }
     }
