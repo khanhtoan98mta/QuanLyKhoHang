@@ -41,6 +41,23 @@ namespace QuanlyKhohang.GUI
             }
             dataGridView1.DataSource = data.Tables[0];
         }
+        private void reloadData()
+        {
+            dataGridView1.Columns.Clear();
+            ConnectString cnn = new ConnectString();
+            string con = cnn.getConnectionString(FormDangnhap.checkConnectionString);
+            DataSet data = new DataSet();
+
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+                string query = "EXEC Phieunhap_view";
+                connect.Open();
+                SqlDataAdapter apter = new SqlDataAdapter(query, connect);
+                apter.Fill(data);
+                connect.Close();
+            }
+            dataGridView1.DataSource = data.Tables[0];
+        }
 
         private string DataAccess(string query)
         {
@@ -92,16 +109,37 @@ namespace QuanlyKhohang.GUI
             string nvid = txtNVID.Text;
             ConnectString cnn = new ConnectString();
             string con = cnn.getConnectionString(FormDangnhap.checkConnectionString);
-
+            string query = "EXEC dbo.Phieunhap_insert @nccid = @nccid, @nvid = @nvid, @ngaynhap =  @ngaynhap";
             DataSet data = new DataSet();
             using (SqlConnection connect = new SqlConnection(con))
             {
-                string query = "EXEC dbo.Phieunhap_insert @nccid = " + nccid  + ", @nvid = "+ nvid  + ", @ngaynhap = '"+ DateTime.Now.ToString("yyyy-MM-dd") + "'";
                 connect.Open();
-                SqlDataAdapter apter = new SqlDataAdapter(query, connect);
+                SqlCommand command = new SqlCommand(query, connect);
+                command.Parameters.AddWithValue("@nccid", nccid);
+                command.Parameters.AddWithValue("@nvid", nvid);
+                command.Parameters.AddWithValue("@ngaynhap", DateTime.Now.ToString("yyyy-MM-dd"));
+                command.ExecuteNonQuery();
                 connect.Close();
             }
             MessageBox.Show("Thêm thành công");
+            reloadData();
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            string con = cnn.getConnectionString(FormDangnhap.checkConnectionString);
+            string query = "EXEC dbo.Phieunhap_delete @id = @id";
+            DataSet data = new DataSet();
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+                connect.Open();
+                SqlCommand command = new SqlCommand(query, connect);
+                command.Parameters.AddWithValue("@id", txtPNID.Text);
+                command.ExecuteNonQuery();
+                connect.Close();
+            }
+            MessageBox.Show("Thêm thành công");
+            reloadData();
         }
     }
 
