@@ -45,7 +45,7 @@ namespace QuanlyKhohang.GUI
         private string DataAccess(string query)
         {
             ConnectString cnn = new ConnectString();
-            string con = cnn.getConnectionString(0);
+            string con = cnn.getConnectionString(1);
 
 
             using (SqlConnection connect = new SqlConnection(con))
